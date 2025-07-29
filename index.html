@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>موقع تنزيل هاك دلتا من صنع ✨يزن✨</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Tajawal', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: white;
+      text-align: center;
+      overflow-x: hidden;
+      animation: changeBackground 10s infinite alternate;
+    }
+
+    @keyframes changeBackground {
+      0% { background: linear-gradient(to right, #00c6ff, #0072ff); }
+      25% { background: linear-gradient(to right, #ff4081, #ff1a4d); }
+      50% { background: linear-gradient(to right, #7b2ff7, #f107a3); }
+      75% { background: linear-gradient(to right, #0f2027, #203a43, #2c5364); }
+      100% { background: linear-gradient(to right, #ffafbd, #ffc3a0); }
+    }
+
+    header, footer {
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.7);
+      border-bottom: 2px solid #fff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(8px);
+    }
+
+    footer {
+      margin-top: 40px;
+      border-top: 2px solid #fff;
+    }
+
+    h1, h2 {
+      margin: 20px 0;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+    }
+
+    .container, .features, .comments {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(12px);
+      animation: fadeInUp 1.2s ease both;
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    img {
+      max-width: 70%;
+      height: auto;
+      border-radius: 15px;
+      margin: 20px 0;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+      transition: transform 0.4s;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    a.button {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 35px;
+      background: linear-gradient(135deg, #ff4081, #ff1a4d);
+      color: white;
+      text-decoration: none;
+      border-radius: 50px;
+      font-size: 1.4em;
+      font-weight: bold;
+      transition: transform 0.3s, background 0.3s;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+      cursor: pointer;
+    }
+
+    a.button:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #ff1a4d, #ff4081);
+    }
+
+    .sticker {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    ul {
+      text-align: right;
+      padding-right: 30px;
+      font-size: 1.2em;
+    }
+
+    #countdown {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #ffff99;
+      margin-top: 20px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📱 موقع تنزيل هاك دلتا</h1>
+  </header>
+
+  <div class="container">
+    <h2>🚀 تحميل دلتا الآن</h2>
+    <img src="https://i.postimg.cc/HsCZ2ccf/1733939464644-1000002645.png" alt="شعار دلتا">
+    <p>احصل على أحدث إصدار من دلتا مجاناً. اضغط على الزر أدناه للتحميل.</p>
+
+    <a class="button" onclick="startCountdown()">
+      <img src="https://i.postimg.cc/HsCZ2ccf/1733939464644-1000002645.png" alt="ستيكر" class="sticker">
+      تنزيل الآن
+    </a>
+
+    <div id="countdown">يبدأ التحميل خلال <span id="seconds">10</span> ثانية...</div>
+  </div>
+
+  <div class="features">
+    <h2>✨ مميزات هاك دلتا</h2>
+    <ul>
+      <li>واجهة مستخدم سلسة وسهلة الاستخدام</li>
+      <li>أداء سريع واستجابة فائقة</li>
+      <li>رمز مخصص وجذاب للهاك</li>
+    </ul>
+  </div>
+
+  <div class="comments">
+    <h2>ℹ️ لمحة سريعة عن التطبيق</h2>
+    <p><strong>طريقة التنزيل:</strong> رابط مباشر بعد عد تنازلي بسيط!</p>
+    <p><strong>التحديثات:</strong> نقوم بتحديث الرابط عند صدور نسخة جديدة.</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 جميع الحقوق محفوظة لموقع دلتا 🌟</p>
+  </footer>
+
+  <!-- صوت التنبيه -->
+  <audio id="ding-sound" src="https://cdn.pixabay.com/audio/2021/08/04/audio_9b9216c1bc.mp3" preload="auto"></audio>
+
+  <script>
+    function startCountdown() {
+      const countdown = document.getElementById("countdown");
+      const secondsSpan = document.getElementById("seconds");
+      const ding = document.getElementById("ding-sound");
+      let seconds = 10;
+      countdown.style.display = "block";
+
+      const interval = setInterval(() => {
+        seconds--;
+        secondsSpan.textContent = seconds;
+        if (seconds <= 0) {
+          clearInterval(interval);
+          ding.play(); // تشغيل الصوت
+          setTimeout(() => {
+            window.location.href = "https://www.mediafire.com/file/wnjhkpf4h8km4a5/Delta-2.684.apk/file";
+          }, 800); // ننتظر شوي بعد الصوت
+        }
+      }, 1000);
+    }
+  </script>
+</body>
+</html>
